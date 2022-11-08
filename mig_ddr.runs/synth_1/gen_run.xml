@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1667719412">
+  <File Type="PA-TCL" Name="img_3buf_ov5640.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="img_3buf_ov5640_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="img_3buf_ov5640_reports.tcl"/>
+  <File Type="RDS-RDS" Name="img_3buf_ov5640.vds"/>
+  <File Type="RDS-UTIL" Name="img_3buf_ov5640_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="img_3buf_ov5640_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="img_3buf_ov5640.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="img_3buf_ov5640_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="img_3buf_ov5640_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_7series_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Corrosion.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Expansion.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/char_num_out.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiedmactr/edma_ctr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiedmactr/edma_ctr.v"/>
+        <Attr Name="ImportTime" Val="1662089383"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/frequency_calculation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiedmactr/fs_cap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiedmactr/fs_cap.v"/>
+        <Attr Name="ImportTime" Val="1590910557"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/image_calculation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/matrix_3x3_1bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/monitor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/motor_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uihdmitx/oserdese2_10to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uihdmitx/oserdese2_10to1.v"/>
+        <Attr Name="ImportTime" Val="1577412849"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uihdmitx/oserdese3_10to1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uihdmitx/oserdese3_10to1.v"/>
+        <Attr Name="ImportTime" Val="1576492511"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/protpg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb2hsv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/speed_compute.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/speed_compute_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiov5640cfg/ui5640reg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiov5640cfg/ui5640reg.v"/>
+        <Attr Name="ImportTime" Val="1664164136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiSensorRGB565/uiSensorRGB565.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiSensorRGB565/uiSensorRGB565.v"/>
+        <Attr Name="ImportTime" Val="1661916090"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiov5640cfg/uicfg5640.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiov5640cfg/uicfg5640.v"/>
+        <Attr Name="ImportTime" Val="1582435932"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uidelay/uidelay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uidelay/uidelay.v"/>
+        <Attr Name="ImportTime" Val="1582882775"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uihdmitx/uihdmitx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uihdmitx/uihdmitx.v"/>
+        <Attr Name="ImportTime" Val="1582514789"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uiov5640cfg/uii2c.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uiov5640cfg/uii2c.v"/>
+        <Attr Name="ImportTime" Val="1589337451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uitpg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uivtc/uivtc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uivtc/uivtc.v"/>
+        <Attr Name="ImportTime" Val="1582817212"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/03_ip/uihdmitx/TMDSEncoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/03_ip/uihdmitx/TMDSEncoder.vhd"/>
+        <Attr Name="ImportTime" Val="1576396649"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/uisrc/01_rtl/img_3buf_ov5640.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/01_rtl/img_3buf_ov5640.v"/>
+        <Attr Name="ImportTime" Val="1667487895"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rgb2ycbcr.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="mig_7series_0"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mig_7series_0/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="mig_7series_0"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="img_3buf_ov5640"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/04_pin/fpga_pin.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/uisrc/04_pin/fpga_pin.xdc"/>
+        <Attr Name="ImportTime" Val="1667468015"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="rd_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="wr_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="key_init"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ms_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_square_root"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="RGB_MEM"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO_1bit"/>
+  <BlockFileSet Type="BlockSrcs" Name="div_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_addsub_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="div_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_6"/>
+</GenRun>

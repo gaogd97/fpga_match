@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  3 21:14:29 2022
+# Process ID: 21740
+# Current directory: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/c_addsub_0_synth_1
+# Command line: vivado.exe -log c_addsub_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_addsub_0.tcl
+# Log file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/c_addsub_0_synth_1/c_addsub_0.vds
+# Journal file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/c_addsub_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_addsub_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/GGD_work/program/match/img_camera_ov5640_720p/uisrc/key_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/vivado2019_2/Vivado/2019.2/data/ip'.
+Command: synth_design -top c_addsub_0 -part xc7k325tffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23236 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1030.918 ; gain = 234.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'c_addsub_0' [d:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 1 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'd:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.srcs/sources_1/ip/c_addsub_0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [d:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_0' (6#1) [d:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.srcs/sources_1/ip/c_addsub_0/synth/c_addsub_0.vhd:67]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port clk
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port ce
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_lut6_legacy has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_legacy has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_legacy has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_legacy has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_legacy has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port C_IN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.906 ; gain = 324.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.906 ; gain = 324.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.906 ; gain = 324.992
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1121.906 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1123.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1123.813 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1123.813 ; gain = 326.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1123.813 ; gain = 326.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1123.813 ; gain = 326.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1123.813 ; gain = 326.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port CLK
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port ADD
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port C_IN
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port CE
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port BYPASS
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_14_viv has unconnected port SINIT
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1123.813 ; gain = 326.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1164.297 ; gain = 367.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1164.371 ; gain = 367.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1173.902 ; gain = 376.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |    16|
+|2     |MUXCY |    15|
+|3     |XORCY |    16|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1189.758 ; gain = 392.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1189.758 ; gain = 390.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1189.758 ; gain = 392.844
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1189.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1212.375 ; gain = 742.746
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.375 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/c_addsub_0_synth_1/c_addsub_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP c_addsub_0, cache-ID = d10411d6d55b3989
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.375 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/c_addsub_0_synth_1/c_addsub_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file c_addsub_0_utilization_synth.rpt -pb c_addsub_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  3 21:15:12 2022...

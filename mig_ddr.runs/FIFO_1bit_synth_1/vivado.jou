@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Sep 25 18:49:58 2022
+# Process ID: 1836
+# Current directory: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/FIFO_1bit_synth_1
+# Command line: vivado.exe -log FIFO_1bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIFO_1bit.tcl
+# Log file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/FIFO_1bit_synth_1/FIFO_1bit.vds
+# Journal file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/FIFO_1bit_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIFO_1bit.tcl -notrace

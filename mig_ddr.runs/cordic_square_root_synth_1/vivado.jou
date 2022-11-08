@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  3 21:16:41 2022
+# Process ID: 19312
+# Current directory: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/cordic_square_root_synth_1
+# Command line: vivado.exe -log cordic_square_root.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_square_root.tcl
+# Log file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/cordic_square_root_synth_1/cordic_square_root.vds
+# Journal file: D:/GGD_work/program/match/img_camera_ov5640_720p/mig_ddr.runs/cordic_square_root_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cordic_square_root.tcl -notrace

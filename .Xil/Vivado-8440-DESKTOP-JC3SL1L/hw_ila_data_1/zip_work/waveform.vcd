@@ -1,0 +1,36 @@
+$date
+        2022-Nov-05 16:34:30
+$end
+$version
+        Vivado v2019.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 4 " MONITOR_INST/TS_S [3:0] $end
+$var reg 14 & MONITOR_INST/X [13:0] $end
+$var reg 1 4 MONITOR_INST/ds $end
+$var reg 1 5 MONITOR_INST/sw $end
+$var reg 16 6 MONITOR_INST/speed_set [15:0] $end
+$var reg 1 F _TRIGGER $end
+$var reg 1 G _WINDOW $end
+$var reg 1 H _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 "
+b1100101110 &
+04
+05
+b1100010000100100 6
+0F
+1G
+0H
+$end
+#8192
+b110 "
+1F
+#8193
+b0 "

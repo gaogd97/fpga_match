@@ -1,0 +1,373 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:28 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'wr_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of wr_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:28 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rd_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rd_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:27 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ms_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ms_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:26 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mig_7series_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mig_7series_0 (xilinx.com:ip:mig_7series:4.2 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:16 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Dec 22 10:53:15 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:18 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'wr_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of wr_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:17 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rd_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rd_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:16 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ms_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ms_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:15 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mig_7series_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mig_7series_0 (xilinx.com:ip:mig_7series:4.2 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:05 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Nov  2 15:34:04 2020
+| Host         : 6QRKIFEZU6WKSG1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:44 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'wr_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of wr_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:43 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rd_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rd_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:41 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ms_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ms_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:40 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mig_7series_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mig_7series_0 (xilinx.com:ip:mig_7series:4.2 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:30 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_1 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Oct 19 15:26:28 2020
+| Host         : DESKTOP-70U0FCD running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_wiz_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_wiz_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+

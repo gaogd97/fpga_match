@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov  6 15:33:51 2022
+# Process ID: 15240
+# Current directory: D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1
+# Command line: vivado.exe -log img_3buf_ov5640.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source img_3buf_ov5640.tcl -notrace
+# Log file: D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.vdi
+# Journal file: D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source img_3buf_ov5640.tcl -notrace

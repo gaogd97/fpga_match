@@ -1,0 +1,1019 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov  6 14:22:20 2022
+# Process ID: 6976
+# Current directory: D:/img_camera_ov5640_720p_cute
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8832 D:\img_camera_ov5640_720p_cute\mig_ddr.xpr
+# Log file: D:/img_camera_ov5640_720p_cute/vivado.log
+# Journal file: D:/img_camera_ov5640_720p_cute\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/img_camera_ov5640_720p_cute/mig_ddr.xpr
+INFO: [Project 1-313] Project file moved from 'D:/FPGA_learn/FPGA_match/img_camera_ov5640_720p_cute' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/img_camera_ov5640_720p_cute/uisrc/key_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 1103.480 ; gain = 438.082
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1815.520 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+set_property PROGRAM.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/ila223' at location 'uuid_0D33D34288105CD4847843353C7AE266' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/vio' at location 'uuid_62CFA0CA9DCD5F18BE060AFA46048B09' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'IMAGE_C/VIO3' at location 'uuid_7803E0AD155C5E6C856E2A2C1D58A64B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'uitpg_inst/ila123' at location 'uuid_7DB31A3132B9587CA4206B8139EBE080' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/ila666' at location 'uuid_9518BE0AADB65306A3B3F4BC94CACF35' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'nolabel_line377' at location 'uuid_A685D1AED23657E98960F7EF485A3A87' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/VIO2' at location 'uuid_BCA8DB04FC685D7EA75A4FFC84C05757' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_3 hw_vio_4] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 2920.871 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/ila666"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/ila223"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"uitpg_inst/ila123"}]]
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00B [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 158 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 165 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0D8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0FF [get_hw_probes protpg_inst/smax -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smax} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0FF [get_hw_probes protpg_inst/vmax -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmax} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0995 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+ERROR: [Vivado 12-106] *** Exception: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 3 (See D:/img_camera_ov5640_720p_cute/vivado_pid6976.debug)
+set_property OUTPUT_VALUE 04EE [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes forth_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {forth_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/ila223' at location 'uuid_0D33D34288105CD4847843353C7AE266' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/vio' at location 'uuid_62CFA0CA9DCD5F18BE060AFA46048B09' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'IMAGE_C/VIO3' at location 'uuid_7803E0AD155C5E6C856E2A2C1D58A64B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'uitpg_inst/ila123' at location 'uuid_7DB31A3132B9587CA4206B8139EBE080' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/ila666' at location 'uuid_9518BE0AADB65306A3B3F4BC94CACF35' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'nolabel_line377' at location 'uuid_A685D1AED23657E98960F7EF485A3A87' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/VIO2' at location 'uuid_BCA8DB04FC685D7EA75A4FFC84C05757' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/ila223' at location 'uuid_0D33D34288105CD4847843353C7AE266' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/vio' at location 'uuid_62CFA0CA9DCD5F18BE060AFA46048B09' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'IMAGE_C/VIO3' at location 'uuid_7803E0AD155C5E6C856E2A2C1D58A64B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'uitpg_inst/ila123' at location 'uuid_7DB31A3132B9587CA4206B8139EBE080' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/ila666' at location 'uuid_9518BE0AADB65306A3B3F4BC94CACF35' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'nolabel_line377' at location 'uuid_A685D1AED23657E98960F7EF485A3A87' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/VIO2' at location 'uuid_BCA8DB04FC685D7EA75A4FFC84C05757' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_3 hw_vio_4] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2920.871 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/ila666"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/ila223"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"uitpg_inst/ila123"}]]
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00B [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 158 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 165 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0D8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0FF [get_hw_probes protpg_inst/smax -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smax} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0FF [get_hw_probes protpg_inst/vmax -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmax} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0995 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 04EE [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes forth_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {forth_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 078 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 038 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 050 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00F [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 000 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 001 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 168 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 138 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 178 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 01F [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00F [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 118 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 158 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 098 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 068 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0C0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 018 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 098 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0C8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 058 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0D8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0C8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 004 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 165 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 167 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE_RADIX UNSIGNED [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  6 15:23:33 2022] Launched synth_1...
+Run output will be captured here: D:/img_camera_ov5640_720p_cute/mig_ddr.runs/synth_1/runme.log
+[Sun Nov  6 15:23:33 2022] Launched impl_1...
+Run output will be captured here: D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2920.871 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_3 hw_vio_4] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2920.871 ; gain = 0.000
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 158 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 167 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0FF [get_hw_probes protpg_inst/smax -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smax} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0995 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1262 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 070 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0D8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0C8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A0 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 098 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 001 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 167 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 001 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 008 [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 003 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 007 [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 009 [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_3] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2920.871 ; gain = 0.000
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00B [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 058 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 078 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_3] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3004.805 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_hw_device' failed due to earlier errors.
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 01 [get_hw_probes MONITOR_INST/X_inertia -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_inertia} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes MONITOR_INST/X_inertia -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_inertia} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 8424 [get_hw_probes MONITOR_INST/SPEED2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/SPEED2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 9999 [get_hw_probes MONITOR_INST/SPEED2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/SPEED2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE FFFF [get_hw_probes MONITOR_INST/SPEED2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/SPEED2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 05 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 2995 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F95 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0E99 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A99 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0500 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0700 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0740 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02A0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 098 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 05 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1200 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1100 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes forth_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {forth_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1200 [get_hw_probes L_mode2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {L_mode2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes L_mode2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {L_mode2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1200 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1250 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1300 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02C0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 900 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 850 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0900 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0980 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 920 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1100 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02F0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 00F [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 148 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 168 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 078 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 35 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 2F00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 2800 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_2 hw_vio_3] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3004.805 ; gain = 0.000
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1800 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0800 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes h4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0200 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1200 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02E8 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02F0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02EC [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02E4 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02D4 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02D0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 3B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 60 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 05 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 3B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 03 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 04 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 3B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 06 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 01 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0D [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 10 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 12 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 32 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 12 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 15 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 12 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0500 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0800 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0900 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02E8 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 11 [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0700 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0500 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0600 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+undo
+INFO: [Common 17-17] undo 'set_property OUTPUT_VALUE 0F [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]'
+set_property OUTPUT_VALUE 0F [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0200 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0150 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0050 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0100 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02F8 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 098 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0C8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00C [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 085 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0D8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0E8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 02E0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0300 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0600 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02D0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1040 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02B0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0290 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0900 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0C00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0D00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0280 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_2 hw_vio_3] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3004.805 ; gain = 0.000
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 0290 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0B00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0900 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0C00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 980 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0800 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_2 hw_vio_3] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3004.805 ; gain = 0.000
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 0B00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00C [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0E8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249860360
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/ila223' at location 'uuid_0D33D34288105CD4847843353C7AE266' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'protpg_inst/vio' at location 'uuid_62CFA0CA9DCD5F18BE060AFA46048B09' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'IMAGE_C/VIO3' at location 'uuid_7803E0AD155C5E6C856E2A2C1D58A64B' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'uitpg_inst/ila123' at location 'uuid_7DB31A3132B9587CA4206B8139EBE080' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/ila666' at location 'uuid_9518BE0AADB65306A3B3F4BC94CACF35' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'nolabel_line377' at location 'uuid_A685D1AED23657E98960F7EF485A3A87' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'MONITOR_INST/VIO2' at location 'uuid_BCA8DB04FC685D7EA75A4FFC84C05757' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {D:/img_camera_ov5640_720p_cute/mig_ddr.runs/impl_1/img_3buf_ov5640.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 4 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_2 hw_vio_3 hw_vio_4] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3004.805 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/ila666"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/ila223"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"uitpg_inst/ila123"}]]
+WARNING: Simulation object protpg_inst/data_in was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_v was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_s was not found in the design.
+WARNING: Simulation object protpg_inst/hsv_h was not found in the design.
+set_property OUTPUT_VALUE 002 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00C [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmin2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 005 [get_hw_probes protpg_inst/hmax2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0E8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 080 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes l2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 090 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 088 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 070 [get_hw_probes protpg_inst/vmin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/vmin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0F8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0E8 [get_hw_probes protpg_inst/smin -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/smin} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 00A [get_hw_probes protpg_inst/hmax1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmax1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 003 [get_hw_probes protpg_inst/hmin1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+commit_hw_vio [get_hw_probes {protpg_inst/hmin1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"protpg_inst/vio"}]]
+set_property OUTPUT_VALUE 0290 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02 [get_hw_probes MONITOR_INST/X_inertia -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_inertia} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes forth_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {forth_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 980 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0D [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 970 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 940 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes forth_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {forth_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02B0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 0E [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02F0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 02E0 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 950 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 960 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 02D8 [get_hw_probes MONITOR_INST/X_reg -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+commit_hw_vio [get_hw_probes {MONITOR_INST/X_reg} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"MONITOR_INST/VIO2"}]]
+set_property OUTPUT_VALUE 9450 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0945 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0960 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0970 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0980 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0E00 [get_hw_probes l4 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l4} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0980 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0B [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0500 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 2000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0C00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 990 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1010 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 980 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0800 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A [get_hw_probes l1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0A00 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0000 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0500 [get_hw_probes h3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {h3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0F00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1100 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 099 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0990 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0970 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 0D00 [get_hw_probes l3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {l3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 1000 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+set_property OUTPUT_VALUE 990 [get_hw_probes back_pulse_num -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+commit_hw_vio [get_hw_probes {back_pulse_num} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"nolabel_line377"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210249860360
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  6 20:02:47 2022...

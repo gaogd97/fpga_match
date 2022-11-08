@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_0_synth_1" LaunchDir="D:/GGD_work/ggd/MK7160FA/03_demo/02_example_mig_ddr_k7/03_img_camera/img_camera_ov5640_720p/mig_ddr.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

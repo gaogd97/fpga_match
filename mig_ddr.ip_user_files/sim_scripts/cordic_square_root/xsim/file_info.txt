@@ -1,0 +1,2 @@
+cordic_square_root.vhd,vhdl,xil_defaultlib,../../../../mig_ddr.srcs/sources_1/ip/cordic_square_root/sim/cordic_square_root.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v
